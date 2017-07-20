@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ambimax_GoogleTagManager>
+            <version>1.0.0</version>
+        </Ambimax_GoogleTagManager>
+    </modules>
+    <global>
+        <helpers>
+            <ambimax_googletagmanager>
+                <class>Ambimax_GoogleTagManager_Helper</class>
+            </ambimax_googletagmanager>
+        </helpers>
+    </global>
+    <default>
+        <google>
+            <ambimax_googletagmanager>
+                <enabled>0</enabled>
+            </ambimax_googletagmanager>
+        </google>
+    </default>
+    <frontend>
+        <layout>
+            <updates>
+                <ambimax_googletagmanager>
+                    <file>ambimax/googletagmanager.xml</file>
+                </ambimax_googletagmanager>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <block type="core/template" name="head_google_tag_manager_script" before="-">
+                <action method="setTemplate">
+                    <template>ambimax/googletagmanager/script.phtml</template>
+                </action>
+            </block>
+        </reference>
+        <reference name="after_body_start">
+            <block type="core/template" name="body_google_tag_manager">
+                <action method="setTemplate">
+                    <template>ambimax/googletagmanager/iframe.phtml</template>
+                </action>
+            </block>
+        </reference>
+    </default>
+</layout>

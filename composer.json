@@ -1,0 +1,15 @@
+{
+  "name": "ambimax/magento-module-ambimax-googletagmanager",
+  "type": "magento-module",
+  "description": "Magento 1 Module to activate Google Tag Manager on differnt website and store views.",
+  "homepage": "https://www.ambimax.de",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors":[
+    {
+      "name":"Julian Bour",
+      "email":"jb@ambimax.de"
+    }
+  ]
+}

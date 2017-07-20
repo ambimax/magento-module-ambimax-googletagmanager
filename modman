@@ -1,0 +1,4 @@
+src/app/code/community/Ambimax/GoogleTagManager                             app/code/community/Ambimax/GoogleTagManager
+src/app/design/frontend/rwd/default/layout/ambimax/googletagmanager.xml     app/design/frontend/rwd/default/layout/ambimax/googletagmanager.xml
+src/app/design/frontend/rwd/default/template/ambimax/googletagmanager       app/design/frontend/rwd/default/template/ambimax/googletagmanager
+src/app/etc/modules/Ambimax_GoogleTagManager.xml                            app/etc/modules/Ambimax_GoogleTagManager.xml
