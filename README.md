@@ -9,7 +9,7 @@ For installation use composer or copy files manually.
 ### composer
 ```
 "require": {
-    "ambimax/magento-module-ambimax-googletagmanager": "~1.0"
+    "ambimax/magento-module-ambimax-googletagmanager": "1.0.*"
 }
 ```
 
