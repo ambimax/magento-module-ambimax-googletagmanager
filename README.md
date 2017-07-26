@@ -1,6 +1,6 @@
 # ambimax® GoogleTagManager
 
-Magento 1 Module to activate Google Tag Manager on differnt website and store views.
+Magento 1 Module to activate Google Tag Manager on different website and store views.
 
 ##  Installation
 
