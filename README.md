@@ -1,6 +1,6 @@
 # ambimax® GoogleTagManager
 
-Magento 1 Module to activate Google Tag Manager on different website and store views.
+Google Tag Manager Integration for Magento 1 with DataLayer support
 
 ##  Installation
 
@@ -9,17 +9,19 @@ For installation use composer or copy files manually.
 ### composer
 ```
 "require": {
-    "ambimax/magento-module-ambimax-googletagmanager": "~1.0"
+    "ambimax/magento-module-ambimax-googletagmanager": "~1."
 }
 ```
 
 ## Configuration
 
-To use please enable Google Tag Manager and set Google Tag Manager Code in
-```System > Configuration > Google > Google Tag Manager settings```.
+For usage please enter `container_id` and _activate_ the module in `System > Configuration > Google`.
 
+## License
 
-#### Authors, contributors and maintainers
+[MIT License](http://choosealicense.com/licenses/mit/)
 
-Author:
-- Julian Bour
+## Author Information
+
+ - [Tobias Schifftner](https://twitter.com/tschifftner), [ambimax® GmbH](https://www.ambimax.de)
+ - Julian Bour, [ambimax® GmbH](https://www.ambimax.de)
