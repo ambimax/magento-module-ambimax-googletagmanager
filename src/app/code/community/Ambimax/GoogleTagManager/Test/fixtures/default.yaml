@@ -1,3 +1,10 @@
+registry:
+  registry:
+    - current_category
+  singleton:
+    - core/session
+    - checkout/session
+
 scope:
   website:
     - website_id: 1

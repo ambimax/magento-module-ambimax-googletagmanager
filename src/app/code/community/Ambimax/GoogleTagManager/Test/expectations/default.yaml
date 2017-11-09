@@ -13,7 +13,7 @@ dataLayer:
     categoryId: '2'
     categoryName: Website Category
     categoryIsAnchor: '0'
-    categoryProductsCount: 0
+    categoryProductsCount: 1
     categoryHasImage: null
     categoryCmsBlockId: null
     categoryDisplayMode: PRODUCTS
