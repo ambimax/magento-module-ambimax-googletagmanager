@@ -1,0 +1,35 @@
+---
+dataLayer:
+  product:
+    productId: '1'
+    productSku: test
+    productName: Test
+    productType: simple
+    productInStock: '1'
+    productPrice: '1.0000'
+    productSpecialPrice: null
+
+  category:
+    categoryId: '2'
+    categoryName: Website Category
+    categoryIsAnchor: '0'
+    categoryProductsCount: 1
+    categoryHasImage: null
+    categoryCmsBlockId: null
+    categoryDisplayMode: PRODUCTS
+    pageCategory: category
+
+  order_success:
+    transactionId: '100000001'
+    transactionAffiliation: '1'
+    transactionTotal: 399.9800
+    transactionProducts:
+      - name: swisspet Kratzbaum Pisa, beige
+        sku: 635660
+        category: 'Website Category'
+        price: 199.9900
+        quantity: 2.0000
+    transactionTax: 16.9900
+    transactionCurrency: EUR
+    transactionShipping: 12.5000
+    pageCategory: new_order
