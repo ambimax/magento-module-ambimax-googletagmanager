@@ -1,5 +1,7 @@
 # ambimax® GoogleTagManager
 
+[![Build Status](https://travis-ci.org/ambimax/magento-module-ambimax-googletagmanager.svg?branch=master)](https://travis-ci.org/ambimax/magento-module-ambimax-googletagmanager)
+
 Google Tag Manager Integration for Magento 1 with DataLayer support
 
 ##  Installation
