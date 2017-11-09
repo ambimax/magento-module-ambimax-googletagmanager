@@ -4,7 +4,6 @@
         <Ambimax_GoogleTagManager>
             <active>true</active>
             <codePool>community</codePool>
-            <version>1.0.0</version>
         </Ambimax_GoogleTagManager>
     </modules>
 </config>
