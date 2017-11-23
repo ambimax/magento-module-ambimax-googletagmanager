@@ -9,7 +9,7 @@ class Ambimax_GoogleTagManager_Test_Config_Main extends EcomDev_PHPUnit_Test_Cas
 
     public function testModuleVersion()
     {
-        $this->assertModuleVersion('2.0.0');
+        $this->assertModuleVersion('2.1.1');
     }
 
     public function testBlockAliases()
