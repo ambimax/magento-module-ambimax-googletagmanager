@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <layout>
     <default>
-        <reference name="head">
-            <block type="ambimax_googletagmanager/dataLayer" name="ambimax_googletagmanager.script_head" template="ambimax/googletagmanager/script.phtml"/>
-        </reference>
         <reference name="after_body_start">
             <block type="ambimax_googletagmanager/dataLayer" name="ambimax_googletagmanager.data_layer" template="ambimax/googletagmanager/iframe.phtml"/>
         </reference>
