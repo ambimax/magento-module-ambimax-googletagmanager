@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ambimax_GoogleTagManager>
-            <version>2.1.1</version>
+            <version>2.1.2</version>
         </Ambimax_GoogleTagManager>
     </modules>
     <global>

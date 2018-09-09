@@ -1,6 +1,6 @@
 <?php
 
-class Ambimax_GoogleTagManager_Test_Block_DataLayer_Order_Success extends EcomDev_PHPUnit_Test_Case
+class Ambimax_GoogleTagManager_Test_Block_DataLayer_Order_SuccessTest extends EcomDev_PHPUnit_Test_Case
 {
     protected $_dataLayerBlock;
     protected $_checkoutSessionMock;

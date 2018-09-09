@@ -1,6 +1,6 @@
 <?php
 
-class Ambimax_GoogleTagManager_Test_Block_DataLayer_Category extends EcomDev_PHPUnit_Test_Case
+class Ambimax_GoogleTagManager_Test_Block_DataLayer_CategoryTest extends EcomDev_PHPUnit_Test_Case
 {
     protected $_dataLayerBlock;
 
