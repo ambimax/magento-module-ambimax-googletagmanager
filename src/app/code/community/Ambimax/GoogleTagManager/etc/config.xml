@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ambimax_GoogleTagManager>
-            <version>2.1.2</version>
+            <version>2.2.0</version>
         </Ambimax_GoogleTagManager>
     </modules>
     <global>
@@ -46,12 +46,18 @@
         <google>
             <ambimax_gtm>
                 <enabled>0</enabled>
+                <remarketing_enabled>0</remarketing_enabled>
             </ambimax_gtm>
             <ambimax_gtm_datalayer>
                 <add_datalayer_category_page>1</add_datalayer_category_page>
                 <add_datalayer_product_page>1</add_datalayer_product_page>
                 <add_datalayer_success_page>1</add_datalayer_success_page>
             </ambimax_gtm_datalayer>
+            <ambimax_gtm_remarketing_datalayer>
+                <add_remarketing_datalayer_product_page>1</add_remarketing_datalayer_product_page>
+                <add_remarketing_datalayer_cart_page>1</add_remarketing_datalayer_cart_page>
+                <add_remarketing_datalayer_success_page>1</add_remarketing_datalayer_success_page>
+            </ambimax_gtm_remarketing_datalayer>
         </google>
     </default>
     <phpunit>

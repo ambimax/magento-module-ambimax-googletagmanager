@@ -1,0 +1,4 @@
+<?php /** @var Ambimax_GoogleTagManager_Block_Remarketing_DataLayer $this */ ?>
+<?php if ( '[]' !== $json = $this->getDataLayerJson()) :?>
+<script type="application/javascript">window.dataLayer = window.dataLayer || []; dataLayer.push(<?php echo $json ?>);</script>
+<?php endif; ?>

@@ -6,17 +6,16 @@ class Ambimax_GoogleTagManager_Block_DataLayer_Product extends Ambimax_GoogleTag
      * @var array
      */
     protected $_dataLayerAttributes = [
-        'productId' => 'entity_id',
-        'productSku' => 'sku',
-        'productName' => 'name',
-        'productType' => 'type_id',
+        'productId'      => 'entity_id',
+        'productSku'     => 'sku',
+        'productName'    => 'name',
+        'productType'    => 'type_id',
         'productInStock' => 'is_in_stock',
-        'productPrice' => 'price',
-        'productSpecialPrice' => 'special_price',
+        'productPrice'   => 'price',
     ];
 
     /**
-     * @return Mage_Catalog_Model_Category|mixed
+     * @return Mage_Catalog_Model_Product|mixed|object
      */
     public function getDataObject()
     {
@@ -25,10 +24,27 @@ class Ambimax_GoogleTagManager_Block_DataLayer_Product extends Ambimax_GoogleTag
 
     /**
      * @return bool
+     * @throws Exception
      */
     public function isValidDataObject()
     {
-        return $this->getDataObject() instanceof Mage_Catalog_Model_Product && $this->getDataObject()->getId();
+        $product = $this->getDataObject();
+        if (!$product instanceof Mage_Catalog_Model_Product || !$product->getId()) {
+            return false;
+        }
+
+        // check whether it has special price right now and add it to the dataLayer
+        if ($specialPrice = $product->getSpecialPrice()) {
+            $fromDate = new DateTime($product->getSpecialFromDate());
+            $toDate = new DateTime($product->getSpecialToDate());
+            $nowDate = new DateTime(date('Y-m-d'));
+
+            if ($fromDate <= $nowDate && $nowDate <= $toDate) {
+                $this->_dataLayerAttributes['productSpecialPrice'] = 'special_price';
+            }
+        }
+
+        return true;
     }
 
     /**
