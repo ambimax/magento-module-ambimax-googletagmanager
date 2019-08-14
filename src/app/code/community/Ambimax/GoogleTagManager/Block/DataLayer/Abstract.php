@@ -12,21 +12,21 @@ abstract class Ambimax_GoogleTagManager_Block_DataLayer_Abstract extends Mage_Co
      */
     public function getDataLayer()
     {
-        if ( $this->_dataLayer ) {
+        if ($this->_dataLayer) {
             return $this->_dataLayer;
         }
 
         $this->_dataLayer = [];
 
-        if ( !$this->isAllowed() ) {
+        if (!$this->isAllowed()) {
             return $this->_dataLayer;
         }
 
-        if ( $this->isValidDataObject() ) {
+        if ($this->isValidDataObject()) {
             foreach ($this->_dataLayerAttributes as $code => $attributeCode) {
 
                 // handle callbacks
-                if ( isset($attributeCode['callback']) ) {
+                if (isset($attributeCode['callback'])) {
                     $this->_dataLayer[$code] = call_user_func(array($this, $attributeCode['callback'])); // @codingStandardsIgnoreLine
                     continue;
                 }
@@ -35,7 +35,7 @@ abstract class Ambimax_GoogleTagManager_Block_DataLayer_Abstract extends Mage_Co
             }
         }
 
-        if ( !empty($this->_staticData) ) {
+        if (!empty($this->_staticData)) {
             $this->_dataLayer = array_merge($this->_dataLayer, $this->_staticData);
         }
 

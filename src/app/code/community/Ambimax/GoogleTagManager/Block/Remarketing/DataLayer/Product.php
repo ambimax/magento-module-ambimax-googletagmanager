@@ -1,6 +1,7 @@
 <?php
 
-class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Product extends Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
+class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Product extends
+    Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
 {
 
     /**
@@ -49,6 +50,8 @@ class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Product extends Ambim
      */
     public function isAllowed()
     {
-        return Mage::getStoreConfigFlag('google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_product_page');
+        return Mage::getStoreConfigFlag(
+            'google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_product_page'
+        );
     }
 }

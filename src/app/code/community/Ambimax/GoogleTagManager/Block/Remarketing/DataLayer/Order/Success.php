@@ -1,6 +1,7 @@
 <?php
 
-class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Order_Success extends Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
+class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Order_Success extends
+    Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
 {
     /**
      * @var
@@ -58,6 +59,8 @@ class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Order_Success extends
      */
     public function isAllowed()
     {
-        return Mage::getStoreConfigFlag('google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_success_page');
+        return Mage::getStoreConfigFlag(
+            'google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_success_page'
+        );
     }
 }

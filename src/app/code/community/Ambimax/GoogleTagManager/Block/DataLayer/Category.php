@@ -43,7 +43,7 @@ class Ambimax_GoogleTagManager_Block_DataLayer_Category extends Ambimax_GoogleTa
      */
     public function getCategoryProductsCount()
     {
-        if ( !$this->isValidDataObject() ) {
+        if (!$this->isValidDataObject()) {
             return 0;
         }
 

@@ -58,11 +58,11 @@ class Ambimax_GoogleTagManager_Block_DataLayer_Order_Success extends Ambimax_Goo
      */
     public function getCartItems()
     {
-        if ( !is_array($this->_cartItems) ) {
+        if (!is_array($this->_cartItems)) {
 
             $this->_cartItems = [];
 
-            if ( !$this->isValidDataObject() ) {
+            if (!$this->isValidDataObject()) {
                 return $this->_cartItems;
             }
 
@@ -89,11 +89,11 @@ class Ambimax_GoogleTagManager_Block_DataLayer_Order_Success extends Ambimax_Goo
      */
     public function getCategoryFromCartItem(Mage_Sales_Model_Order_Item $item)
     {
-        if ( !$item->getProduct() instanceof Mage_Catalog_Model_Product ) {
+        if (!$item->getProduct() instanceof Mage_Catalog_Model_Product) {
             return '';
         }
 
-        if ( !$item->getProduct()->getCategory() instanceof Mage_Catalog_Model_Category ) {
+        if (!$item->getProduct()->getCategory() instanceof Mage_Catalog_Model_Category) {
             return '';
         }
 
