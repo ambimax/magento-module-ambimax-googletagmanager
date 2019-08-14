@@ -2,7 +2,11 @@
 <layout>
     <default>
         <reference name="after_body_start">
-            <block type="ambimax_googletagmanager/dataLayer" name="ambimax_googletagmanager.data_layer" template="ambimax/googletagmanager/iframe.phtml"/>
+            <block type="ambimax_googletagmanager/dataLayer" name="ambimax_googletagmanager.data_layer"
+                   template="ambimax/googletagmanager/iframe.phtml"/>
+            <block type="ambimax_googletagmanager/remarketing_dataLayer"
+                   name="ambimax_googletagmanager.remarketing_data_layer"
+                   template="ambimax/googletagmanager/remarketing/iframe.phtml"/>
         </reference>
     </default>
 
@@ -10,35 +14,63 @@
     <!-- product page -->
     <catalog_product_view>
         <reference name="ambimax_googletagmanager.data_layer">
-            <block type="ambimax_googletagmanager/dataLayer_product" name="ambimax_googletagmanager.data_layer.product" as="ambimax_gtm_product"/>
+            <block type="ambimax_googletagmanager/dataLayer_product" name="ambimax_googletagmanager.data_layer.product"
+                   as="ambimax_gtm_product"/>
+        </reference>
+        <reference name="ambimax_googletagmanager.remarketing_data_layer">
+            <block type="ambimax_googletagmanager/remarketing_dataLayer_product"
+                   name="ambimax_googletagmanager.remarketing_data_layer.product" as="ambimax_gtm_remarketing_product"/>
         </reference>
     </catalog_product_view>
 
     <!-- category page (non-anchor) -->
     <catalog_category_default>
         <reference name="ambimax_googletagmanager.data_layer">
-            <block type="ambimax_googletagmanager/dataLayer_category" name="ambimax_googletagmanager.data_layer.category" as="ambimax_gtm_category"/>
+            <block type="ambimax_googletagmanager/dataLayer_category"
+                   name="ambimax_googletagmanager.data_layer.category" as="ambimax_gtm_category"/>
         </reference>
     </catalog_category_default>
 
     <!-- category page (anchor) -->
     <catalog_category_layered>
         <reference name="ambimax_googletagmanager.data_layer">
-            <block type="ambimax_googletagmanager/dataLayer_category" name="ambimax_googletagmanager.data_layer.category" as="ambimax_gtm_category"/>
+            <block type="ambimax_googletagmanager/dataLayer_category"
+                   name="ambimax_googletagmanager.data_layer.category" as="ambimax_gtm_category"/>
         </reference>
     </catalog_category_layered>
+
+    <!-- cart page -->
+    <checkout_cart_index>
+        <reference name="ambimax_googletagmanager.remarketing_data_layer">
+            <block type="ambimax_googletagmanager/remarketing_dataLayer_cart"
+                   name="ambimax_googletagmanager.remarketing_data_layer.cart"
+                   as="ambimax_gtm_remarketing_cart"/>
+        </reference>
+    </checkout_cart_index>
 
     <!-- order success page (multishipping) -->
     <checkout_multishipping_success>
         <reference name="ambimax_googletagmanager.data_layer">
-            <block type="ambimax_googletagmanager/dataLayer_order_success" name="ambimax_googletagmanager.data_layer.order_success" as="ambimax_gtm_order_success"/>
+            <block type="ambimax_googletagmanager/dataLayer_order_success"
+                   name="ambimax_googletagmanager.data_layer.order_success" as="ambimax_gtm_order_success"/>
+        </reference>
+        <reference name="ambimax_googletagmanager.remarketing_data_layer">
+            <block type="ambimax_googletagmanager/remarketing_dataLayer_order_success"
+                   name="ambimax_googletagmanager.remarketing_data_layer.order_success"
+                   as="ambimax_gtm_remarketing_order_success"/>
         </reference>
     </checkout_multishipping_success>
 
     <!-- order success page (one step checkout) -->
     <checkout_onepage_success>
         <reference name="ambimax_googletagmanager.data_layer">
-            <block type="ambimax_googletagmanager/dataLayer_order_success" name="ambimax_googletagmanager.data_layer.order_success" as="ambimax_gtm_order_success"/>
+            <block type="ambimax_googletagmanager/dataLayer_order_success"
+                   name="ambimax_googletagmanager.data_layer.order_success" as="ambimax_gtm_order_success"/>
+        </reference>
+        <reference name="ambimax_googletagmanager.remarketing_data_layer">
+            <block type="ambimax_googletagmanager/remarketing_dataLayer_order_success"
+                   name="ambimax_googletagmanager.remarketing_data_layer.order_success"
+                   as="ambimax_gtm_remarketing_order_success"/>
         </reference>
     </checkout_onepage_success>
 </layout>
