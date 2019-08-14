@@ -17,7 +17,6 @@ class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer extends Mage_Core_Blo
 
             /** @var Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract $block */
             foreach ($this->getSortedChildBlocks() as $block) {
-                Mage::log('blah', LOG_INFO, 'google_api.log');
                 if ($block->isAllowed() && $data = $block->getGoogleTagParams()) {
                     $this->_dataLayer = [
                         'event'             => 'fireRemarketingTag',
