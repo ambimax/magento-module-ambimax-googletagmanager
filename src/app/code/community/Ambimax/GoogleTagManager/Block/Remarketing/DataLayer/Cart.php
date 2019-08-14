@@ -1,6 +1,7 @@
 <?php
 
-class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Cart extends Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
+class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Cart extends
+    Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Abstract
 {
     /**
      * @return array
@@ -54,6 +55,8 @@ class Ambimax_GoogleTagManager_Block_Remarketing_DataLayer_Cart extends Ambimax_
      */
     public function isAllowed()
     {
-        return Mage::getStoreConfigFlag('google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_cart_page');
+        return Mage::getStoreConfigFlag(
+            'google/ambimax_gtm_remarketing_datalayer/add_remarketing_datalayer_cart_page'
+        );
     }
 }
